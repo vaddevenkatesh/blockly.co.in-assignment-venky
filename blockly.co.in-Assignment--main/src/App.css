@@ -1,0 +1,111 @@
+.mapContainer {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: static;
+  color: #fff;
+
+}
+.mapContainer > div {
+  margin: 20px 20px;
+}
+.btnCont {
+  display: flex;
+  justify-content: center;
+}
+
+
+.start-btn, .reset-btn {
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+
+.speed-slider {
+  margin: 20px 0;
+}
+
+
+.google-map {
+  height: 500px;
+  width: 100%;
+}
+
+.map-card {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.CircularProgress {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.map-card {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.map-card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.start-btn, .reset-btn {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.start-btn:hover, .reset-btn:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+
+.google-map {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.animated-marker {
+  transition: transform 0.5s ease;
+}
+
+
+.stop-marker.highlighted {
+  border: 2px solid #ff5722;
+  border-radius: 50%;
+}
+
+
+.speed-slider .MuiSlider-thumb {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.MuiTooltip-tooltip {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.8rem;
+}
